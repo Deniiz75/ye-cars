@@ -12,13 +12,25 @@ export default function Home() {
     <>
       <section className="home-hero">
         <Image
-          className="home-hero__image"
+          className="home-hero__fallback"
           src="/images/hero-ye-cars.jpg"
           alt="Premium occasion in de YE CARS showroom"
           fill
           priority
           sizes="100vw"
         />
+        <video
+          className="home-hero__video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/hero-ye-cars.jpg"
+          aria-hidden="true"
+        >
+          <source src="/videos/ye-cars-hero.mp4" type="video/mp4" />
+        </video>
         <div className="home-hero__shade" />
         <div className="shell home-hero__content">
           <p className="eyebrow eyebrow--line">Geselecteerde occasions</p>
