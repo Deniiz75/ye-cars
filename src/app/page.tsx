@@ -29,7 +29,7 @@ export default function Home() {
           poster="/images/hero-ye-cars.jpg"
           aria-hidden="true"
         >
-          <source src="/videos/ye-cars-hero.mp4" type="video/mp4" />
+          <source src="/videos/ye-cars-hero-v2.mp4" type="video/mp4" />
         </video>
         <div className="home-hero__shade" />
         <div className="shell home-hero__content">

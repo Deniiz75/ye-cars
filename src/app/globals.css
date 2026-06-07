@@ -2086,10 +2086,6 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .home-hero__video {
-    display: none;
-  }
-
   *,
   *::before,
   *::after {
