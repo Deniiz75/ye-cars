@@ -31,8 +31,10 @@
   --line-strong: rgba(255, 255, 255, 0.26);
   --text: #f5f3ee;
   --muted: #a8a7a2;
-  --gold: #d8ad4a;
-  --gold-light: #ecd985;
+  --gold: #ff5a64;
+  --gold-light: #ff7a83;
+  --red-deep: #d81b2f;
+  --red-surface: #e52336;
   --green: #20c96b;
   --shell: 1340px;
 }
@@ -70,8 +72,8 @@ body::before {
 }
 
 ::selection {
-  color: #111;
-  background: var(--gold-light);
+  color: #fff;
+  background: var(--red-deep);
 }
 
 a {
@@ -209,13 +211,13 @@ img {
 }
 
 .button--gold {
-  color: #191813;
-  background: linear-gradient(110deg, var(--gold), var(--gold-light));
-  box-shadow: 0 12px 38px rgba(216, 173, 74, 0.14);
+  color: #fff;
+  background: linear-gradient(110deg, var(--red-deep), var(--red-surface));
+  box-shadow: 0 12px 38px rgba(255, 34, 47, 0.22);
 }
 
 .button--gold:hover {
-  background: var(--gold-light);
+  background: var(--red-surface);
 }
 
 .button--ghost {
@@ -504,8 +506,8 @@ img {
   left: 18px;
   z-index: 2;
   padding: 8px 13px;
-  color: #171717;
-  background: var(--gold-light);
+  color: #fff;
+  background: var(--red-surface);
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.17em;
@@ -610,8 +612,8 @@ img {
 }
 
 .service-row:first-child {
-  color: #191919;
-  background: var(--gold);
+  color: #fff;
+  background: var(--red-deep);
 }
 
 .service-row:hover {
@@ -619,7 +621,7 @@ img {
 }
 
 .service-row:first-child:hover {
-  background: var(--gold-light);
+  background: var(--red-surface);
 }
 
 .service-row > span {
@@ -645,7 +647,7 @@ img {
 }
 
 .service-row:first-child p {
-  color: rgba(0, 0, 0, 0.68);
+  color: rgba(255, 255, 255, 0.94);
 }
 
 .story-grid {
@@ -693,7 +695,7 @@ img {
   inset: 22px -22px -22px 22px;
   z-index: -1;
   content: "";
-  border: 1px solid rgba(216, 173, 74, 0.44);
+  border: 1px solid rgba(255, 34, 47, 0.44);
 }
 
 .story-visual img {
@@ -708,8 +710,8 @@ img {
   align-content: center;
   gap: 4px;
   padding: 24px;
-  color: #191919;
-  background: var(--gold);
+  color: #fff;
+  background: var(--red-deep);
 }
 
 .story-stat strong {
@@ -741,6 +743,7 @@ img {
   place-items: center;
   overflow: hidden;
   background:
+    linear-gradient(110deg, rgba(133, 4, 19, 0.24), transparent 58%),
     linear-gradient(rgba(6, 7, 8, 0.84), rgba(6, 7, 8, 0.9)),
     url("/images/hero-ye-cars.jpg") center 63% / cover;
   border-block: 1px solid var(--line);
@@ -750,7 +753,7 @@ img {
   position: absolute;
   width: 500px;
   height: 500px;
-  background: rgba(216, 173, 74, 0.16);
+  background: rgba(255, 34, 47, 0.18);
   border-radius: 50%;
   filter: blur(100px);
 }
@@ -780,7 +783,7 @@ img {
   align-items: flex-end;
   overflow: hidden;
   background:
-    radial-gradient(circle at 78% 40%, rgba(216, 173, 74, 0.16), transparent 25%),
+    radial-gradient(circle at 78% 40%, rgba(255, 34, 47, 0.17), transparent 25%),
     linear-gradient(145deg, #121316, #08090b);
   border-bottom: 1px solid var(--line);
 }
@@ -870,14 +873,14 @@ img {
   padding: 0 44px 0 16px;
   color: var(--text);
   background: var(--panel);
-  border: 1px solid rgba(216, 173, 74, 0.56);
+  border: 1px solid rgba(255, 34, 47, 0.56);
   border-radius: 0;
   outline: none;
 }
 
 .filters select:focus {
   border-color: var(--gold-light);
-  box-shadow: 0 0 0 2px rgba(216, 173, 74, 0.12);
+  box-shadow: 0 0 0 2px rgba(255, 34, 47, 0.14);
 }
 
 .empty-state {
@@ -1133,7 +1136,7 @@ img {
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--gold);
-  box-shadow: 0 0 0 2px rgba(216, 173, 74, 0.09);
+  box-shadow: 0 0 0 2px rgba(255, 34, 47, 0.11);
 }
 
 .contact-form__wide {
