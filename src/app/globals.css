@@ -112,80 +112,24 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 98px;
+  min-height: 110px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.48);
 }
 
 .logo {
-  position: relative;
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: end;
-  width: max-content;
-  line-height: 1;
+  display: block;
+  width: 190px;
+  flex: 0 0 auto;
+  transition: filter 200ms ease;
 }
 
-.logo__mark {
-  position: absolute;
-  top: -13px;
-  left: 4px;
-  width: 96px;
-  height: 14px;
-  overflow: hidden;
+.logo:hover {
+  filter: drop-shadow(0 0 12px rgba(255, 34, 47, 0.24));
 }
 
-.logo__mark::before,
-.logo__mark::after,
-.logo__mark span {
-  position: absolute;
-  content: "";
-  border-top: 1px solid currentColor;
-  border-radius: 50%;
-}
-
-.logo__mark::before {
-  top: 8px;
-  left: 0;
-  width: 52px;
-  height: 18px;
-  transform: rotate(-5deg);
-}
-
-.logo__mark::after {
-  top: 6px;
-  left: 41px;
-  width: 52px;
-  height: 15px;
-  transform: rotate(6deg);
-}
-
-.logo__mark span {
-  top: 12px;
-  left: 11px;
-  width: 76px;
-}
-
-.logo__name {
-  grid-column: 1;
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 0.16em;
-  white-space: nowrap;
-}
-
-.logo__name strong {
-  color: var(--gold-light);
-  font-weight: 500;
-}
-
-.logo__tagline {
-  grid-column: 2;
-  margin: 0 0 3px 12px;
-  color: rgba(255, 255, 255, 0.56);
-  font-size: 7px;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  white-space: nowrap;
+.logo__image {
+  width: 100%;
+  height: auto;
 }
 
 .nav {
@@ -1432,7 +1376,7 @@ img {
 }
 
 .logo--footer {
-  margin-top: 14px;
+  width: 250px;
   margin-bottom: 28px;
 }
 
@@ -1640,7 +1584,7 @@ img {
 
 @media (max-width: 860px) {
   .header__inner {
-    min-height: 80px;
+    min-height: 92px;
   }
 
   .menu-button {
@@ -1755,17 +1699,12 @@ img {
     width: calc(100% - 32px);
   }
 
-  .logo__name {
-    font-size: 19px;
+  .logo {
+    width: 140px;
   }
 
-  .logo__tagline {
-    display: none;
-  }
-
-  .logo__mark {
-    top: -11px;
-    width: 76px;
+  .logo--footer {
+    width: 220px;
   }
 
   .home-hero {
