@@ -15,7 +15,7 @@ export default function ContactPage() {
         <div className="shell page-hero__inner">
           <p className="eyebrow eyebrow--line">Neem contact op</p>
           <h1>Plan uw afspraak.</h1>
-          <p>Wij nemen graag de tijd voor uw vraag, zoekopdracht of bezichtiging.</p>
+          <p>Wij nemen graag de tijd voor uw vraag, taxatie, consignatie of bezichtiging.</p>
         </div>
       </section>
       <section className="section">

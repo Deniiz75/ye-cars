@@ -1214,15 +1214,16 @@ img {
 
 .service-page-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
 }
 
 .service-page-card {
   position: relative;
-  min-height: 480px;
-  padding: 52px;
+  min-height: 510px;
+  padding: 46px 38px;
+  scroll-margin-top: 110px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   transition: background-color 250ms ease;
@@ -1601,6 +1602,10 @@ img {
   }
 
   .car-grid--featured {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-page-grid {
     grid-template-columns: 1fr 1fr;
   }
 

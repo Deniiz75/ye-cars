@@ -97,8 +97,8 @@ export default function Home() {
               <h2>Onze diensten</h2>
             </div>
             <p>
-              Van eerste orientatie tot aflevering. YE CARS houdt het proces persoonlijk, overzichtelijk en zonder
-              onnodige omwegen.
+              Koop een occasion uit onze collectie, verkoop direct aan YE CARS of laat ons de verkoop in consignatie
+              verzorgen.
             </p>
           </div>
           <div className="service-feature">
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
             <div className="service-list">
               {services.map((service) => (
-                <Link href="/diensten" className="service-row" key={service.number}>
+                <Link href={`/diensten#${service.id}`} className="service-row" key={service.number}>
                   <span>{service.number}</span>
                   <div>
                     <h3>{service.title}</h3>
@@ -135,7 +135,7 @@ export default function Home() {
                 <CheckIcon /> Persoonlijke bezichtiging op afspraak
               </li>
               <li>
-                <CheckIcon /> Inruil en financiering mogelijk
+                <CheckIcon /> Directe inkoop en consignatie mogelijk
               </li>
               <li>
                 <CheckIcon /> Heldere uitleg voor aflevering

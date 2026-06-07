@@ -28,11 +28,11 @@ export default function SoldPage() {
           </div>
           <div className="sold-cta">
             <div>
-              <p className="eyebrow">Ook op zoek?</p>
-              <h2>Wij zoeken gericht voor u.</h2>
+              <p className="eyebrow">Ook geïnteresseerd?</p>
+              <h2>Bekijk onze actuele collectie.</h2>
             </div>
-            <Link className="button button--gold" href="/contact">
-              Start een zoekopdracht <ArrowIcon />
+            <Link className="button button--gold" href="/aanbod">
+              Bekijk actueel aanbod <ArrowIcon />
             </Link>
           </div>
         </div>

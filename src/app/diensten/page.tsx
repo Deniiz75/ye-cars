@@ -6,7 +6,7 @@ import { services } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Diensten",
-  description: "Inkoop, taxatie, financiering, garantie en zoekopdrachten bij YE CARS.",
+  description: "Verkoop van occasions, directe inkoop, taxatie en consignatieverkoop bij YE CARS.",
 };
 
 export default function ServicesPage() {
@@ -16,32 +16,28 @@ export default function ServicesPage() {
         <Image src="/images/service-car.jpg" alt="" fill priority sizes="100vw" />
         <div className="page-hero__shade" />
         <div className="shell page-hero__inner">
-          <p className="eyebrow eyebrow--line">Van taxatie tot aflevering</p>
+          <p className="eyebrow eyebrow--line">Kopen of verkopen</p>
           <h1>Onze diensten</h1>
-          <p>Een zorgvuldig proces, afgestemd op uw situatie.</p>
+          <p>Persoonlijke begeleiding bij aankoop, directe verkoop of verkoop in consignatie.</p>
         </div>
       </section>
 
       <section className="section">
         <div className="shell service-page-grid">
           {services.map((service) => (
-            <article className="service-page-card" key={service.number}>
+            <article className="service-page-card" id={service.id} key={service.number}>
               <span>{service.number}</span>
               <h2>{service.title}</h2>
               <p>{service.text}</p>
               <ul>
-                <li>
-                  <CheckIcon /> Persoonlijk contact
-                </li>
-                <li>
-                  <CheckIcon /> Duidelijke afspraken
-                </li>
-                <li>
-                  <CheckIcon /> Snelle terugkoppeling
-                </li>
+                {service.highlights.map((highlight) => (
+                  <li key={highlight}>
+                    <CheckIcon /> {highlight}
+                  </li>
+                ))}
               </ul>
-              <Link href="/contact">
-                Bespreek de mogelijkheden <ArrowIcon />
+              <Link href={service.href}>
+                {service.cta} <ArrowIcon />
               </Link>
             </article>
           ))}
@@ -51,11 +47,11 @@ export default function ServicesPage() {
       <section className="cta-band">
         <div className="cta-band__glow" />
         <div className="shell cta-band__content">
-          <p className="eyebrow">Persoonlijk advies</p>
-          <h2>Vertel ons wat u zoekt.</h2>
-          <p>Wij nemen de mogelijkheden graag rustig met u door.</p>
+          <p className="eyebrow">Uw auto verkopen?</p>
+          <h2>Directe inkoop of consignatie.</h2>
+          <p>Wij bespreken welke verkoopvorm het beste bij uw auto en uw voorkeur past.</p>
           <Link className="button button--gold" href="/contact">
-            Neem contact op <ArrowIcon />
+            Bespreek uw auto <ArrowIcon />
           </Link>
         </div>
       </section>

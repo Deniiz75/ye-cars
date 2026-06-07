@@ -18,22 +18,41 @@ export const site = {
 export const services = [
   {
     number: "01",
-    title: "Inkoop & taxatie",
-    text: "Uw auto verkopen? Ontvang een helder en vrijblijvend voorstel, met snelle afhandeling en directe betaling.",
+    id: "verkoop",
+    title: "Verkoop occasions",
+    text: "Ontdek onze zorgvuldig geselecteerde occasions, helder gepresenteerd en te bezichtigen op afspraak.",
+    highlights: [
+      "Geselecteerde eigen voorraad",
+      "Inzicht in historie en conditie",
+      "Bezichtiging en proefrit op afspraak",
+    ],
+    cta: "Bekijk het aanbod",
+    href: "/aanbod",
   },
   {
     number: "02",
-    title: "Garantie & aflevering",
-    text: "Kies voor extra zekerheid met een afleverpakket dat past bij de auto en uw verwachte gebruik.",
+    id: "inkoop",
+    title: "Inkoop & taxatie",
+    text: "Wilt u uw auto direct verkopen? Wij beoordelen de auto en doen een helder, vrijblijvend voorstel.",
+    highlights: [
+      "Vrijblijvende waardebepaling",
+      "Marktconform voorstel",
+      "Snelle betaling en overdracht",
+    ],
+    cta: "Vraag een taxatie aan",
+    href: "/contact",
   },
   {
     number: "03",
-    title: "Financiering & lease",
-    text: "Wij denken mee over een passende maandtermijn voor particuliere financiering of zakelijke lease.",
-  },
-  {
-    number: "04",
-    title: "Zoekopdracht",
-    text: "Staat uw ideale auto niet in de collectie? Wij zoeken gericht binnen ons netwerk naar de juiste uitvoering.",
+    id: "consignatie",
+    title: "Consignatieverkoop",
+    text: "Wij verkopen uw auto namens u en verzorgen het traject van presentatie tot bezichtiging en overdracht.",
+    highlights: [
+      "Professionele presentatie en advertenties",
+      "Wij regelen reacties en bezichtigingen",
+      "Heldere afspraken over opbrengst en vergoeding",
+    ],
+    cta: "Bespreek consignatie",
+    href: "/contact",
   },
 ] as const;

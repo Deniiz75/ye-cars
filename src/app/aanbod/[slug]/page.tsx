@@ -135,7 +135,8 @@ export default async function CarDetailPage({ params }: { params: Promise<{ slug
             <p className="eyebrow eyebrow--line">Vragen of interesse?</p>
             <h2>Plan uw bezichtiging.</h2>
             <p>
-              Wij nemen persoonlijk contact met u op om de auto, inruil en eventuele financiering door te spreken.
+              Wij nemen persoonlijk contact met u op om de auto, een eventuele inruil en de gewenste aflevering door
+              te spreken.
             </p>
           </div>
           <ContactForm carName={carName} />
