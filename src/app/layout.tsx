@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ContactActions } from "@/components/contact-actions";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { MotionProvider } from "@/components/motion-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -23,8 +24,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="nl">
+    <html lang="nl" data-scroll-behavior="smooth">
       <body>
+        <MotionProvider />
         <Header />
         <main>{children}</main>
         <Footer />

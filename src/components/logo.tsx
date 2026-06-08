@@ -11,6 +11,7 @@ export function Logo({ footer = false }: { footer?: boolean }) {
         width={376}
         height={180}
         priority={!footer}
+        loading={footer ? "lazy" : "eager"}
         sizes={footer ? "250px" : "(max-width: 680px) 140px, 190px"}
       />
     </Link>

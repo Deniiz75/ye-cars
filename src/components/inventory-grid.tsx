@@ -66,7 +66,7 @@ export function InventoryGrid({ cars }: { cars: Car[] }) {
         </label>
       </div>
       {filtered.length ? (
-        <div className="car-grid">
+        <div className="car-grid inventory-updating" key={`${brand}-${fuel}-${sort}`}>
           {filtered.map((car) => (
             <CarCard car={car} key={car.slug} />
           ))}
