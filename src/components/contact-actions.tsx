@@ -3,12 +3,12 @@ import { site } from "@/data/site";
 
 export function ContactActions() {
   const whatsappHref = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
-    "Hallo YE CARS, ik heb een vraag over jullie collectie.",
+    "Hallo YE Cars, ik heb een vraag over jullie collectie.",
   )}`;
 
   return (
     <>
-      <a className="whatsapp-float" href={whatsappHref} target="_blank" rel="noreferrer" aria-label="WhatsApp YE CARS">
+      <a className="whatsapp-float" href={whatsappHref} target="_blank" rel="noreferrer" aria-label="WhatsApp YE Cars">
         <WhatsAppIcon />
       </a>
       <aside className="mobile-contact" aria-label="Snel contact">

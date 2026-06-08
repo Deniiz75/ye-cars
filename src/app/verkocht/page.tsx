@@ -6,7 +6,7 @@ import { soldCars } from "@/data/cars";
 
 export const metadata: Metadata = {
   title: "Verkocht",
-  description: "Een selectie van recent door YE CARS verkochte auto's.",
+  description: "Een selectie van recent door YE Cars verkochte auto's.",
 };
 
 export default function SoldPage() {
@@ -16,7 +16,7 @@ export default function SoldPage() {
         <div className="shell page-hero__inner">
           <p className="eyebrow eyebrow--line">Recent afgeleverd</p>
           <h1>Verkocht</h1>
-          <p>Een indruk van auto&apos;s die hun volgende eigenaar via YE CARS hebben gevonden.</p>
+          <p>Een indruk van auto&apos;s die hun volgende eigenaar via YE Cars hebben gevonden.</p>
         </div>
       </section>
       <section className="section">

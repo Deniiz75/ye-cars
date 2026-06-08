@@ -22,7 +22,7 @@ export async function generateMetadata({
 
   return {
     title: `${car.brand} ${car.model}`,
-    description: `${car.brand} ${car.model} ${car.edition} uit ${car.year}, aangeboden door YE CARS.`,
+    description: `${car.brand} ${car.model} ${car.edition} uit ${car.year}, aangeboden door YE Cars.`,
     openGraph: { images: [car.image] },
   };
 }

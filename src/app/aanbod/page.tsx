@@ -4,7 +4,7 @@ import { availableCars } from "@/data/cars";
 
 export const metadata: Metadata = {
   title: "Aanbod",
-  description: "Bekijk de actuele collectie geselecteerde occasions van YE CARS.",
+  description: "Bekijk de actuele collectie geselecteerde occasions van YE Cars.",
 };
 
 export default function InventoryPage() {

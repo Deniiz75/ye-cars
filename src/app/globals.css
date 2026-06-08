@@ -258,6 +258,10 @@ img {
   text-transform: uppercase;
 }
 
+.brand-name {
+  text-transform: none;
+}
+
 .eyebrow--line {
   display: flex;
   align-items: center;

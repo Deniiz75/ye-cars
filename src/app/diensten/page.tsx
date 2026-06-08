@@ -6,7 +6,7 @@ import { services } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Diensten",
-  description: "Verkoop van occasions, directe inkoop, taxatie en consignatieverkoop bij YE CARS.",
+  description: "Verkoop van occasions, directe inkoop, taxatie en consignatieverkoop bij YE Cars.",
 };
 
 export default function ServicesPage() {

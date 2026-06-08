@@ -8,13 +8,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://ye-cars-previews.vercel.app"),
   title: {
-    default: "YE CARS | Geselecteerde premium occasions",
-    template: "%s | YE CARS",
+    default: "YE Cars | Geselecteerde premium occasions",
+    template: "%s | YE Cars",
   },
   description:
-    "Ontdek de geselecteerde premium occasions van YE CARS. Persoonlijke service, transparante historie en bezichtiging op afspraak.",
+    "Ontdek de geselecteerde premium occasions van YE Cars. Persoonlijke service, transparante historie en bezichtiging op afspraak.",
   openGraph: {
-    title: "YE CARS | Selected automobiles",
+    title: "YE Cars | Selected automobiles",
     description: "Geselecteerde premium occasions met persoonlijke service.",
     type: "website",
     locale: "nl_NL",

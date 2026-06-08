@@ -55,11 +55,13 @@ export function Footer() {
         </div>
       </div>
       <div className="shell footer__bottom">
-        <span>© {new Date().getFullYear()} YE CARS</span>
+        <span>
+          © {new Date().getFullYear()} <span className="brand-name">YE Cars</span>
+        </span>
         <span>Privacy · Voorwaarden · Cookies</span>
       </div>
       <div className="footer__wordmark" aria-hidden="true">
-        YE CARS
+        YE Cars
       </div>
     </footer>
   );

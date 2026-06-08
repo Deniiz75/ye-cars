@@ -14,7 +14,7 @@ export default function Home() {
         <Image
           className="home-hero__fallback"
           src="/images/hero-ye-cars.jpg"
-          alt="Premium occasion in de YE CARS showroom"
+          alt="Premium occasion in de YE Cars showroom"
           fill
           priority
           sizes="100vw"
@@ -39,7 +39,7 @@ export default function Home() {
             <span>bijblijft.</span>
           </h1>
           <p className="home-hero__intro">
-            Bij YE CARS vindt u zorgvuldig geselecteerde auto&apos;s met een heldere historie en een persoonlijke
+            Bij YE Cars vindt u zorgvuldig geselecteerde auto&apos;s met een heldere historie en een persoonlijke
             aflevering.
           </p>
           <div className="button-row">
@@ -97,7 +97,7 @@ export default function Home() {
               <h2>Onze diensten</h2>
             </div>
             <p>
-              Koop een occasion uit onze collectie, verkoop direct aan YE CARS of laat ons de verkoop in consignatie
+              Koop een occasion uit onze collectie, verkoop direct aan YE Cars of laat ons de verkoop in consignatie
               verzorgen.
             </p>
           </div>
@@ -124,7 +124,9 @@ export default function Home() {
       <section className="section">
         <div className="shell story-grid">
           <div className="story-copy">
-            <p className="eyebrow eyebrow--line">Over YE CARS</p>
+            <p className="eyebrow eyebrow--line">
+              Over <span className="brand-name">YE Cars</span>
+            </p>
             <h2>Gekozen met aandacht. Afgeleverd met zekerheid.</h2>
             <p>
               Wij selecteren op meer dan merk en kilometerstand. Onderhoud, herkomst, uitvoering en algemene conditie
@@ -146,7 +148,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="story-visual">
-            <Image src="/images/showroom.jpg" alt="YE CARS selectie en showroom" fill sizes="50vw" />
+            <Image src="/images/showroom.jpg" alt="YE Cars selectie en showroom" fill sizes="50vw" />
             <div className="story-stat story-stat--top">
               <strong>01</strong>
               <span>Aanspreekpunt van begin tot eind</span>

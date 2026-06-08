@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Neem contact op met YE CARS of plan een bezichtiging op afspraak.",
+  description: "Neem contact op met YE Cars of plan een bezichtiging op afspraak.",
 };
 
 export default function ContactPage() {

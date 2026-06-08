@@ -1,9 +1,9 @@
 export const site = {
-  name: "YE CARS",
+  name: "YE Cars",
   tagline: "Selected automobiles",
-  phoneDisplay: "085 - 00 00 00",
-  phoneHref: "+31850000000",
-  whatsapp: "31850000000",
+  phoneDisplay: "+31 6 53435106",
+  phoneHref: "+31653435106",
+  whatsapp: "31653435106",
   email: "info@yecars.nl",
   address: "Bezoek uitsluitend op afspraak",
   city: "Nederland",

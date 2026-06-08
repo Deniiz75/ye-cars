@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Logo({ footer = false }: { footer?: boolean }) {
   return (
-    <Link className={`logo${footer ? " logo--footer" : ""}`} href="/" aria-label="YE CARS home">
+    <Link className={`logo${footer ? " logo--footer" : ""}`} href="/" aria-label="YE Cars home">
       <Image
         className="logo__image"
         src="/brand/ye-cars-logo.png"

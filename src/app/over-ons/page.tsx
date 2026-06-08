@@ -5,7 +5,7 @@ import { ArrowIcon, CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Over ons",
-  description: "Lees meer over de selectie, werkwijze en persoonlijke service van YE CARS.",
+  description: "Lees meer over de selectie, werkwijze en persoonlijke service van YE Cars.",
 };
 
 export default function AboutPage() {
@@ -15,7 +15,9 @@ export default function AboutPage() {
         <Image src="/images/showroom.jpg" alt="" fill priority sizes="100vw" />
         <div className="page-hero__shade" />
         <div className="shell page-hero__inner">
-          <p className="eyebrow eyebrow--line">Over YE CARS</p>
+          <p className="eyebrow eyebrow--line">
+            Over <span className="brand-name">YE Cars</span>
+          </p>
           <h1>Auto&apos;s met een verhaal dat klopt.</h1>
         </div>
       </section>
@@ -28,7 +30,7 @@ export default function AboutPage() {
           </div>
           <div>
             <p>
-              YE CARS is ontstaan vanuit een eenvoudige overtuiging: een goede occasion begint bij een kritische
+              YE Cars is ontstaan vanuit een eenvoudige overtuiging: een goede occasion begint bij een kritische
               selectie en eindigt bij een aflevering waar alles helder is.
             </p>
             <p>
@@ -58,7 +60,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="shell story-grid story-grid--reverse">
           <div className="story-visual">
-            <Image src="/images/hero-ye-cars.jpg" alt="YE CARS premium selectie" fill sizes="50vw" />
+            <Image src="/images/hero-ye-cars.jpg" alt="YE Cars premium selectie" fill sizes="50vw" />
           </div>
           <div className="story-copy">
             <p className="eyebrow eyebrow--line">Onze belofte</p>
