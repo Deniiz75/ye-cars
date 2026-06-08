@@ -60,7 +60,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="shell story-grid story-grid--reverse">
           <div className="story-visual">
-            <Image src="/images/hero-ye-cars.jpg" alt="YE Cars premium selectie" fill sizes="50vw" />
+            <Image src="/images/hero-ye-cars.jpg" alt="YE Cars selectie" fill sizes="50vw" />
           </div>
           <div className="story-copy">
             <p className="eyebrow eyebrow--line">Onze belofte</p>

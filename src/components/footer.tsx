@@ -10,7 +10,7 @@ export function Footer() {
         <div className="footer__brand">
           <Logo footer />
           <p>
-            Geselecteerde premium occasions met aandacht voor kwaliteit, herkomst en een persoonlijke aflevering.
+            Geselecteerde occasions met aandacht voor kwaliteit, herkomst en een persoonlijke aflevering.
           </p>
           <a className="whatsapp-pill" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noreferrer">
             <WhatsAppIcon />
@@ -21,12 +21,13 @@ export function Footer() {
           </a>
         </div>
         <div>
-          <p className="footer__title">Bezoek & bezichtiging</p>
-          <div className="appointment-block">
-            <span>Persoonlijke ontvangst</span>
-            <strong>Uitsluitend op afspraak</strong>
-            <p>Zo reserveren wij alle tijd voor u en de auto.</p>
-          </div>
+          <p className="footer__title">Bezoekadres</p>
+          <address className="appointment-block">
+            <span>YE Cars Mijdrecht</span>
+            <strong>{site.address}</strong>
+            <p>{site.city}</p>
+            <small>{site.visitNote}</small>
+          </address>
         </div>
         <div>
           <p className="footer__title">Contact</p>
@@ -36,9 +37,6 @@ export function Footer() {
           <a className="footer__contact" href={`mailto:${site.email}`}>
             <MailIcon /> {site.email}
           </a>
-          <p className="footer__title footer__title--spaced">Adres</p>
-          <p>{site.address}</p>
-          <p>{site.city}</p>
         </div>
         <div>
           <p className="footer__title">Links</p>
@@ -53,7 +51,7 @@ export function Footer() {
       </div>
       <div className="shell footer__bottom">
         <span>
-          &copy; {new Date().getFullYear()} <span className="brand-name">YE Cars</span>
+          &copy; 2024 <span className="brand-name">YE Cars</span>
         </span>
         <span>Privacy &middot; Voorwaarden &middot; Cookies</span>
       </div>

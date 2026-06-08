@@ -373,27 +373,28 @@ img {
 
 .brand-marquee {
   overflow: hidden;
-  padding: 27px 0;
+  padding: 27px 0 27px 4vw;
   background: var(--panel-2);
   border-block: 1px solid var(--line);
 }
 
 .brand-marquee__track {
+  --marquee-gap: clamp(50px, 7vw, 120px);
+
   display: flex;
   width: max-content;
-  gap: clamp(50px, 7vw, 120px);
-  padding-left: 4vw;
+  gap: var(--marquee-gap);
   color: rgba(255, 255, 255, 0.62);
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  animation: marquee 28s linear infinite;
+  animation: marquee 48s linear infinite;
 }
 
 @keyframes marquee {
   to {
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% - var(--marquee-gap) / 2));
   }
 }
 
@@ -1336,6 +1337,15 @@ img {
   text-transform: none;
 }
 
+.contact-cards small {
+  margin-top: 10px;
+  color: var(--gold-light);
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
 .contact-form-panel {
   padding: 50px;
   background: var(--panel);
@@ -1456,6 +1466,7 @@ img {
   gap: 7px;
   padding-left: 16px;
   border-left: 2px solid var(--red-deep);
+  font-style: normal;
 }
 
 .appointment-block span {
@@ -1475,6 +1486,15 @@ img {
   color: var(--muted) !important;
   font-size: 11px !important;
   line-height: 1.65;
+}
+
+.appointment-block small {
+  margin-top: 11px;
+  padding-top: 11px;
+  color: #d6d5d0;
+  font-size: 10px;
+  line-height: 1.55;
+  border-top: 1px solid var(--line);
 }
 
 .footer__contact {
@@ -1789,7 +1809,8 @@ img {
   }
 
   .brand-marquee__track {
-    gap: 48px;
+    --marquee-gap: 48px;
+
     font-size: 13px;
   }
 

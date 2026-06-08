@@ -24,8 +24,8 @@ export default function ContactPage() {
             <p className="eyebrow">Direct contact</p>
             <h2>Hoe kunnen wij u helpen?</h2>
             <p>
-              Laat uw gegevens achter of neem rechtstreeks contact op. Wij reageren tijdens openingstijden zo snel
-              mogelijk.
+              Laat uw gegevens achter of neem rechtstreeks contact op. Wij reageren zo snel mogelijk en plannen ieder
+              bezoek persoonlijk met u in.
             </p>
             <div className="contact-cards">
               <a href={`tel:${site.phoneHref}`}>
@@ -49,13 +49,18 @@ export default function ContactPage() {
                   <strong>Start een gesprek</strong>
                 </span>
               </a>
-              <div>
+              <a href={site.mapsHref} target="_blank" rel="noreferrer">
                 <MapIcon />
                 <span>
                   Bezoek
-                  <strong>{site.address}</strong>
+                  <strong>
+                    {site.address}
+                    <br />
+                    {site.city}
+                  </strong>
+                  <small>{site.visitNote}</small>
                 </span>
-              </div>
+              </a>
             </div>
           </div>
           <div className="contact-form-panel">

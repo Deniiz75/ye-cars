@@ -5,8 +5,11 @@ export const site = {
   phoneHref: "+31653435106",
   whatsapp: "31653435106",
   email: "info@yecars.nl",
-  address: "Bezoek uitsluitend op afspraak",
-  city: "Nederland",
+  address: "Rendementsweg 23",
+  city: "3641 SK Mijdrecht",
+  visitNote: "Bezoek uitsluitend op afspraak",
+  mapsHref:
+    "https://www.google.com/maps/search/?api=1&query=Rendementsweg%2023%2C%203641%20SK%20Mijdrecht",
   instagram: "https://www.instagram.com/",
 } as const;
 

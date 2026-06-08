@@ -6,6 +6,22 @@ import { availableCars } from "@/data/cars";
 import { services } from "@/data/site";
 
 const featuredCars = availableCars.slice(0, 4);
+const featuredBrands = [
+  "Hyundai",
+  "Citroën",
+  "Peugeot",
+  "Renault",
+  "Suzuki",
+  "Opel",
+  "Ford",
+  "Kia",
+  "SEAT",
+  "Volkswagen",
+  "Audi",
+  "BMW",
+  "Mercedes-Benz",
+];
+const marqueeBrands = [...featuredBrands, ...featuredBrands];
 
 export default function Home() {
   return (
@@ -14,7 +30,7 @@ export default function Home() {
         <Image
           className="home-hero__fallback"
           src="/images/hero-ye-cars.jpg"
-          alt="Premium occasion in de YE Cars showroom"
+          alt="Occasion in de YE Cars showroom"
           fill
           priority
           sizes="100vw"
@@ -59,7 +75,7 @@ export default function Home() {
 
       <section className="brand-marquee" aria-label="Merken in onze collectie">
         <div className="brand-marquee__track">
-          {["Audi", "BMW", "Mercedes-Benz", "Porsche", "Volkswagen", "Volvo", "Audi", "BMW"].map((brand, index) => (
+          {marqueeBrands.map((brand, index) => (
             <span key={`${brand}-${index}`}>{brand}</span>
           ))}
         </div>
@@ -103,7 +119,7 @@ export default function Home() {
           </div>
           <div className="service-feature">
             <div className="service-feature__image">
-              <Image src="/images/service-car.jpg" alt="Premium auto in een donkere showroom" fill sizes="50vw" />
+              <Image src="/images/service-car.jpg" alt="Auto in een donkere showroom" fill sizes="50vw" />
             </div>
             <div className="service-list">
               {services.map((service) => (
