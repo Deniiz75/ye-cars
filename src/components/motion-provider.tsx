@@ -41,20 +41,17 @@ export function MotionProvider() {
 
   useEffect(() => {
     const root = document.documentElement;
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const observed = new WeakSet<Element>();
-    const observer = reduceMotion
-      ? null
-      : new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (!entry.isIntersecting) return;
-              entry.target.classList.add("is-visible");
-              observer?.unobserve(entry.target);
-            });
-          },
-          { threshold: 0.12, rootMargin: "0px 0px -7% 0px" },
-        );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -7% 0px" },
+    );
 
     function prepareReveals(scope: ParentNode = document) {
       revealGroups.forEach(({ selector, effect }) => {
@@ -77,11 +74,7 @@ export function MotionProvider() {
           const index = Math.max(0, siblings.indexOf(element));
           element.style.setProperty("--reveal-delay", `${Math.min(index, 4) * 70}ms`);
 
-          if (reduceMotion) {
-            element.classList.add("is-visible");
-          } else {
-            observer?.observe(element);
-          }
+          observer.observe(element);
         });
       });
     }
@@ -103,7 +96,7 @@ export function MotionProvider() {
     mutationObserver.observe(document.querySelector("main") ?? document.body, { childList: true, subtree: true });
 
     function handlePointerDown(event: PointerEvent) {
-      if (reduceMotion || event.button !== 0) return;
+      if (event.button !== 0) return;
       const target = event.target instanceof Element ? event.target.closest<HTMLElement>(rippleSelector) : null;
       if (!target) return;
 
@@ -120,7 +113,7 @@ export function MotionProvider() {
     }
 
     function handleNavigation(event: MouseEvent) {
-      if (reduceMotion || event.defaultPrevented || event.button !== 0) return;
+      if (event.defaultPrevented || event.button !== 0) return;
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
       const anchor = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>("a[href]") : null;
@@ -149,7 +142,7 @@ export function MotionProvider() {
     return () => {
       window.clearTimeout(enterTimer);
       if (navigationTimer.current) window.clearTimeout(navigationTimer.current);
-      observer?.disconnect();
+      observer.disconnect();
       mutationObserver.disconnect();
       document.removeEventListener("pointerdown", handlePointerDown, true);
       document.removeEventListener("click", handleNavigation, true);

@@ -1450,6 +1450,33 @@ img {
   margin: 0;
 }
 
+.appointment-block {
+  display: grid;
+  max-width: 260px;
+  gap: 7px;
+  padding-left: 16px;
+  border-left: 2px solid var(--red-deep);
+}
+
+.appointment-block span {
+  color: var(--gold);
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.appointment-block strong {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.appointment-block p {
+  color: var(--muted) !important;
+  font-size: 11px !important;
+  line-height: 1.65;
+}
+
 .footer__contact {
   display: flex;
   align-items: center;
@@ -2488,21 +2515,13 @@ html.page-is-entering main {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .route-curtain {
-    display: none;
+  html {
+    scroll-behavior: auto;
   }
 
-  .motion-ready [data-reveal] {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .brand-marquee__track,
+  .page-hero > img,
+  .cta-band__glow {
+    animation-play-state: paused;
   }
 }

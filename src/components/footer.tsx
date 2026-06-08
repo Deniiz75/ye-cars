@@ -21,15 +21,12 @@ export function Footer() {
           </a>
         </div>
         <div>
-          <p className="footer__title">Openingstijden</p>
-          <dl className="hours">
-            {site.openingHours.map(([day, hours]) => (
-              <div key={day}>
-                <dt>{day}</dt>
-                <dd>{hours}</dd>
-              </div>
-            ))}
-          </dl>
+          <p className="footer__title">Bezoek & bezichtiging</p>
+          <div className="appointment-block">
+            <span>Persoonlijke ontvangst</span>
+            <strong>Uitsluitend op afspraak</strong>
+            <p>Zo reserveren wij alle tijd voor u en de auto.</p>
+          </div>
         </div>
         <div>
           <p className="footer__title">Contact</p>
@@ -56,9 +53,9 @@ export function Footer() {
       </div>
       <div className="shell footer__bottom">
         <span>
-          © {new Date().getFullYear()} <span className="brand-name">YE Cars</span>
+          &copy; {new Date().getFullYear()} <span className="brand-name">YE Cars</span>
         </span>
-        <span>Privacy · Voorwaarden · Cookies</span>
+        <span>Privacy &middot; Voorwaarden &middot; Cookies</span>
       </div>
       <div className="footer__wordmark" aria-hidden="true">
         YE Cars

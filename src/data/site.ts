@@ -8,11 +8,6 @@ export const site = {
   address: "Bezoek uitsluitend op afspraak",
   city: "Nederland",
   instagram: "https://www.instagram.com/",
-  openingHours: [
-    ["Ma - vr", "09:00 - 18:00"],
-    ["Zaterdag", "10:00 - 17:00"],
-    ["Zondag", "Op afspraak"],
-  ],
 } as const;
 
 export const services = [
