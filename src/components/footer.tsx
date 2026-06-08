@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { InstagramIcon, MailIcon, PhoneIcon, TikTokIcon, WhatsAppIcon } from "./icons";
 import { Logo } from "./logo";
@@ -61,6 +62,34 @@ export function Footer() {
             <Link href="/over-ons">Over ons</Link>
             <Link href="/verkocht">Verkocht</Link>
             <Link href="/contact">Contact</Link>
+          </div>
+        </div>
+      </div>
+      <div className="shell footer__trust">
+        <p>Keurmerken & zekerheid</p>
+        <div className="footer__trust-logos" aria-label="Keurmerken en garanties">
+          <div className="footer__trust-logo">
+            <Image
+              src="/brand/rdw.webp"
+              alt="RDW erkend bedrijf"
+              width={600}
+              height={346}
+              loading="lazy"
+              sizes="80px"
+            />
+          </div>
+          <div className="footer__trust-logo">
+            <Image src="/brand/nap.webp" alt="NAP" width={600} height={223} loading="lazy" sizes="120px" />
+          </div>
+          <div className="footer__trust-logo footer__trust-logo--square">
+            <Image
+              src="/brand/autotrust.webp"
+              alt="Autotrust Garantie"
+              width={600}
+              height={615}
+              loading="lazy"
+              sizes="44px"
+            />
           </div>
         </div>
       </div>

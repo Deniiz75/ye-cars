@@ -11,7 +11,7 @@ const revealGroups = [
   },
   {
     selector:
-      ".car-card, .service-row, .service-page-card, .values-grid article, .contact-cards > *, .detail-spec-grid > div, .review-card, .footer__grid > *",
+      ".car-card, .service-row, .service-page-card, .values-grid article, .contact-cards > *, .detail-spec-grid > div, .review-card, .footer__grid > *, .footer__trust-logo",
     effect: "up",
   },
   {
