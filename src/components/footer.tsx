@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MailIcon, PhoneIcon, WhatsAppIcon } from "./icons";
+import { InstagramIcon, MailIcon, PhoneIcon, TikTokIcon, WhatsAppIcon } from "./icons";
 import { Logo } from "./logo";
 import { site } from "@/data/site";
 
@@ -21,12 +21,16 @@ export function Footer() {
           </a>
         </div>
         <div>
-          <p className="footer__title">Bezoekadres</p>
+          <p className="footer__title">Bezoek & bezichtiging</p>
           <address className="appointment-block">
-            <span>YE Cars Mijdrecht</span>
-            <strong>{site.address}</strong>
-            <p>{site.city}</p>
-            <small>{site.visitNote}</small>
+            <span>7 dagen per week</span>
+            <strong>{site.visitNote}</strong>
+            <p>
+              {site.address}
+              <br />
+              {site.city}
+            </p>
+            <small>Zo reserveren wij alle tijd voor u en de auto.</small>
           </address>
         </div>
         <div>
@@ -37,6 +41,17 @@ export function Footer() {
           <a className="footer__contact" href={`mailto:${site.email}`}>
             <MailIcon /> {site.email}
           </a>
+          <p className="footer__title footer__title--spaced">Volg YE Cars</p>
+          <div className="footer__socials">
+            <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Volg YE Cars op Instagram">
+              <InstagramIcon />
+              <span>Instagram</span>
+            </a>
+            <a href={site.tiktok} target="_blank" rel="noreferrer" aria-label="Volg YE Cars op TikTok">
+              <TikTokIcon />
+              <span>TikTok</span>
+            </a>
+          </div>
         </div>
         <div>
           <p className="footer__title">Links</p>

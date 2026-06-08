@@ -67,6 +67,25 @@ export function WhatsAppIcon(props: IconProps) {
   );
 }
 
+export function InstagramIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.4" cy="6.6" r="0.8" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function TikTokIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M14 4v10.2a4.2 4.2 0 1 1-3.2-4.1" />
+      <path d="M14 4c.7 2.2 2.1 3.6 4.3 4.1" />
+    </svg>
+  );
+}
+
 export function MenuIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>

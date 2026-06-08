@@ -7,14 +7,15 @@ export const site = {
   email: "info@yecars.nl",
   address: "Rendementsweg 23",
   city: "3641 SK Mijdrecht",
-  visitNote: "Bezoek uitsluitend op afspraak",
+  visitNote: "Uitsluitend op afspraak",
   mapsHref:
     "https://www.google.com/maps/search/?api=1&query=Rendementsweg%2023%2C%203641%20SK%20Mijdrecht",
   googleReviewsHref:
     "https://www.google.com/search?q=YE+Cars+Reviews&ludocid=6203773407291731646#lkt=LocalPoiReviews",
   googleRating: "5,0",
   googleReviewCount: 105,
-  instagram: "https://www.instagram.com/",
+  instagram: "https://www.instagram.com/yecars.nl/",
+  tiktok: "https://www.tiktok.com/@ye.cars?_r=1&_t=ZG-9739vi7qdQe",
 } as const;
 
 export const googleReviews = [
