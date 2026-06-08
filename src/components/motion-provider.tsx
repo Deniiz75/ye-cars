@@ -6,12 +6,12 @@ import { useEffect, useRef } from "react";
 const revealGroups = [
   {
     selector:
-      ".section-heading, .about-intro, .story-copy, .contact-details, .contact-form-panel, .detail-summary, .highlights, .contact-panel > div, .sold-cta, .cta-band__content",
+      ".section-heading, .about-intro, .story-copy, .contact-details, .contact-form-panel, .detail-summary, .highlights, .contact-panel > div, .sold-cta, .cta-band__content, .reviews-header > div, .google-rating",
     effect: "up",
   },
   {
     selector:
-      ".car-card, .service-row, .service-page-card, .values-grid article, .contact-cards > *, .detail-spec-grid > div, .footer__grid > *",
+      ".car-card, .service-row, .service-page-card, .values-grid article, .contact-cards > *, .detail-spec-grid > div, .review-card, .footer__grid > *",
     effect: "up",
   },
   {
@@ -30,6 +30,7 @@ const rippleSelector = [
   ".whatsapp-float",
   ".mobile-contact a",
   ".contact-cards a",
+  ".google-rating",
   ".service-row",
   ".service-page-card > a",
 ].join(", ");

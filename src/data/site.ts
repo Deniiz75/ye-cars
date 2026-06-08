@@ -10,8 +10,27 @@ export const site = {
   visitNote: "Bezoek uitsluitend op afspraak",
   mapsHref:
     "https://www.google.com/maps/search/?api=1&query=Rendementsweg%2023%2C%203641%20SK%20Mijdrecht",
+  googleReviewsHref:
+    "https://www.google.com/search?q=YE+Cars+Reviews&ludocid=6203773407291731646#lkt=LocalPoiReviews",
+  googleRating: "5,0",
+  googleReviewCount: 105,
   instagram: "https://www.instagram.com/",
 } as const;
+
+export const googleReviews = [
+  {
+    author: "Samar Moustafa",
+    text: "Vanwege de uitstekende service wil ik graag mijn positieve ervaring delen.",
+  },
+  {
+    author: "Wensley Rombley",
+    text: "Al mijn vragen zijn goed en professioneel beantwoord.",
+  },
+  {
+    author: "Hdfa Ak",
+    text: "Betrouwbaar en transparant.",
+  },
+] as const;
 
 export const services = [
   {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CarCard } from "@/components/car-card";
 import { ArrowIcon, CheckIcon } from "@/components/icons";
 import { availableCars } from "@/data/cars";
-import { services } from "@/data/site";
+import { googleReviews, services, site } from "@/data/site";
 
 const featuredCars = availableCars.slice(0, 4);
 const featuredBrands = [
@@ -190,6 +190,61 @@ export default function Home() {
             <Link className="button button--ghost" href="/aanbod">
               Bekijk collectie
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section reviews-section" aria-labelledby="reviews-heading">
+        <div className="shell">
+          <div className="reviews-header">
+            <div>
+              <p className="eyebrow eyebrow--line">Klanten over YE Cars</p>
+              <h2 id="reviews-heading">Ervaringen die vertrouwen geven.</h2>
+              <p>
+                Persoonlijke service, duidelijke communicatie en transparante afspraken worden door onze klanten
+                gewaardeerd.
+              </p>
+            </div>
+            <a
+              className="google-rating"
+              href={site.googleReviewsHref}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Bekijk onze ${site.googleRating} uit 5 score en ${site.googleReviewCount} reviews op Google`}
+            >
+              <span className="google-rating__brand">Google</span>
+              <span className="google-rating__row">
+                <strong>{site.googleRating}</strong>
+                <span className="review-stars" aria-label="5 van 5 sterren">
+                  <span aria-hidden="true">★★★★★</span>
+                </span>
+              </span>
+              <small>Gebaseerd op {site.googleReviewCount} reviews</small>
+            </a>
+          </div>
+
+          <div className="reviews-grid">
+            {googleReviews.map((review) => (
+              <article className="review-card" key={review.author}>
+                <div className="review-stars" aria-label="5 van 5 sterren">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+                <blockquote>&ldquo;{review.text}&rdquo;</blockquote>
+                <div className="review-card__author">
+                  <span aria-hidden="true">{review.author.charAt(0)}</span>
+                  <div>
+                    <strong>{review.author}</strong>
+                    <small>Google-review</small>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="reviews-action">
+            <a className="button button--outline" href={site.googleReviewsHref} target="_blank" rel="noreferrer">
+              Bekijk alle Google-reviews <ArrowIcon />
+            </a>
           </div>
         </div>
       </section>
