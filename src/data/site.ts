@@ -16,6 +16,7 @@ export const site = {
   googleReviewCount: 105,
   instagram: "https://www.instagram.com/yecars.nl/",
   tiktok: "https://www.tiktok.com/@ye.cars?_r=1&_t=ZG-9739vi7qdQe",
+  facebook: "https://www.facebook.com/people/YE-Cars/61590799406186/",
 } as const;
 
 export const googleReviews = [

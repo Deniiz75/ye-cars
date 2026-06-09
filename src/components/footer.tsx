@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { InstagramIcon, MailIcon, PhoneIcon, TikTokIcon, WhatsAppIcon } from "./icons";
+import { FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, TikTokIcon, WhatsAppIcon } from "./icons";
 import { Logo } from "./logo";
 import { site } from "@/data/site";
 
@@ -51,6 +51,10 @@ export function Footer() {
             <a href={site.tiktok} target="_blank" rel="noreferrer" aria-label="Volg YE Cars op TikTok">
               <TikTokIcon />
               <span>TikTok</span>
+            </a>
+            <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Volg YE Cars op Facebook">
+              <FacebookIcon />
+              <span>Facebook</span>
             </a>
           </div>
         </div>
