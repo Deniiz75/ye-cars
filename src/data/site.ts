@@ -29,8 +29,8 @@ export const googleReviews = [
     text: "Al mijn vragen zijn goed en professioneel beantwoord.",
   },
   {
-    author: "Hdfa Ak",
-    text: "Betrouwbaar en transparant.",
+    author: "K.Erstman",
+    text: "De klant is hier nog echt koning en deze eigenaar doet echt alle moeite om het hele proces van de aanschaf in goede banen te leiden en absoluut zonder opdringerig te zijn. In 1 woord Fantastisch!!",
   },
 ] as const;
 
