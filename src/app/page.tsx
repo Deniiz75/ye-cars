@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CarCard } from "@/components/car-card";
 import { ArrowIcon, CheckIcon } from "@/components/icons";
-import { availableCars } from "@/data/cars";
+import { LiveInventoryWidget } from "@/components/live-inventory-widget";
 import { googleReviews, services, site } from "@/data/site";
 
-const featuredCars = availableCars.slice(0, 4);
 const featuredBrands = [
   "Hyundai",
   "Citroën",
@@ -89,14 +87,10 @@ export default function Home() {
               <h2>Nieuw binnen</h2>
             </div>
             <p>
-              Een compacte collectie voor wie waarde hecht aan uitvoering, conditie en een transparant aankoopproces.
+              Een live selectie uit ons actuele verkoopsysteem, automatisch bijgewerkt zodra de voorraad verandert.
             </p>
           </div>
-          <div className="car-grid car-grid--featured">
-            {featuredCars.map((car) => (
-              <CarCard car={car} key={car.slug} />
-            ))}
-          </div>
+          <LiveInventoryWidget variant="featured" />
           <div className="section-action">
             <Link className="button button--gold" href="/aanbod">
               Volledige collectie <ArrowIcon />

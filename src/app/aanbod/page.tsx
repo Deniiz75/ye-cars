@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { InventoryGrid } from "@/components/inventory-grid";
-import { availableCars } from "@/data/cars";
+import { LiveInventoryWidget } from "@/components/live-inventory-widget";
 
 export const metadata: Metadata = {
   title: "Aanbod",
@@ -19,7 +18,17 @@ export default function InventoryPage() {
       </section>
       <section className="section section--compact">
         <div className="shell">
-          <InventoryGrid cars={availableCars} />
+          <div className="section-heading section-heading--split">
+            <div>
+              <p className="eyebrow eyebrow--line">Live voorraad</p>
+              <h2>Direct uit ons verkoopsysteem</h2>
+            </div>
+            <p>
+              Dit aanbod wordt automatisch bijgewerkt vanuit Mobilox. Zo ziet u altijd de auto&apos;s die actueel
+              beschikbaar zijn.
+            </p>
+          </div>
+          <LiveInventoryWidget />
         </div>
       </section>
     </>
