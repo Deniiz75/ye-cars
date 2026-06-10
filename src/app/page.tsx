@@ -27,8 +27,8 @@ export default function Home() {
       <section className="home-hero">
         <Image
           className="home-hero__fallback"
-          src="/images/hero-ye-cars.jpg"
-          alt="Occasion in de YE Cars showroom"
+          src="/images/hero-video-poster.jpg"
+          alt="Auto in de YE Cars hero"
           fill
           priority
           sizes="100vw"
@@ -39,8 +39,8 @@ export default function Home() {
           muted
           loop
           playsInline
-          preload="metadata"
-          poster="/images/hero-ye-cars.jpg"
+          preload="auto"
+          poster="/images/hero-video-poster.jpg"
           aria-hidden="true"
         >
           <source src="/videos/ye-cars-hero-v2.mp4" type="video/mp4" />
