@@ -32,6 +32,7 @@ const rippleSelector = [
   ".contact-cards a",
   ".google-rating",
   ".footer__socials a",
+  ".footer__trust-logo--google",
   ".service-row",
   ".service-page-card > a",
 ].join(", ");

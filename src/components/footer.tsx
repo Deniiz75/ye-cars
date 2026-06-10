@@ -95,6 +95,22 @@ export function Footer() {
               sizes="44px"
             />
           </div>
+          <a
+            className="footer__trust-logo footer__trust-logo--google"
+            href={site.googleReviewsHref}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Bekijk de 5-sterrenreviews van YE Cars op Google"
+          >
+            <Image
+              src="/brand/google-reviews.webp"
+              alt="Google 5 sterren"
+              width={401}
+              height={330}
+              loading="lazy"
+              sizes="52px"
+            />
+          </a>
         </div>
       </div>
       <div className="shell footer__bottom">
