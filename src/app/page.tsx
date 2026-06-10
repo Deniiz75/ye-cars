@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowIcon, CheckIcon } from "@/components/icons";
+import { ArrowIcon, CheckIcon, GoogleIcon } from "@/components/icons";
 import { LiveInventoryWidget } from "@/components/live-inventory-widget";
 import { googleReviews, services, site } from "@/data/site";
 
@@ -206,7 +206,10 @@ export default function Home() {
               rel="noreferrer"
               aria-label={`Bekijk onze ${site.googleRating} uit 5 score en ${site.googleReviewCount} reviews op Google`}
             >
-              <span className="google-rating__brand">Google</span>
+              <span className="google-rating__brand">
+                <GoogleIcon className="google-rating__logo" />
+                <span>Google</span>
+              </span>
               <span className="google-rating__row">
                 <strong>{site.googleRating}</strong>
                 <span className="review-stars" aria-label="5 van 5 sterren">

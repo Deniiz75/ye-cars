@@ -844,10 +844,21 @@ img {
 .google-rating__brand {
   position: relative;
   z-index: 1;
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.04em;
+}
+
+.google-rating__logo {
+  width: 23px;
+  height: 23px;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.24));
 }
 
 .google-rating__row {
